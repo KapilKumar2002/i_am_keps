@@ -15,18 +15,22 @@ const EducationSection = () => {
     arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
     customPaging: (i) => (
       <div className="w-3 h-3 rounded-full bg-orange-200"></div>
     ),
     appendDots: (dots) => (
       <div>
-        <ul className="flex justify-center gap-2 mt-4">
-          {dots.map((dot, index) => (
-            <li key={index} className="mx-1">
-              {dot}
-            </li>
-          ))}
-        </ul>
+        <ul className="flex justify-center gap-2 mt-4">{dots}</ul>
       </div>
     ),
   };
@@ -34,21 +38,21 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="p-8 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
+      className="p-4 sm:p-8 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
     >
       <div className="flex gap-2 items-center justify-center">
         <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
-        <h2 className="text-3xl font-bold text-white">Education</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-white">Education</h2>
       </div>
       <Slider {...settings}>
         {educationData.map((education, index) => (
-          <div key={index} className="p-6">
-            <div className="relative p-6 ring-2 ring-gray-400/10 bg-gray-800 rounded-lg transition duration-300 hover:shadow-lg hover:shadow-orange-500">
-              <div className="flex  items-start gap-6">
+          <div key={index} className="p-4 sm:p-6">
+            <div className="relative p-4 sm:p-6 ring-2 ring-gray-400/10 bg-gray-800 rounded-lg transition duration-300 hover:shadow-lg hover:shadow-orange-500">
+              <div className="flex flex-col md:flex-row items-start gap-4 sm:gap-6">
                 <img
                   src={education.image}
                   alt={education.name}
-                  className="w-64 h-64 object-cover rounded-lg shadow-lg"
+                  className="w-full md:max-w-xs md:h-60 lg:max-w-lg h-auto object-cover rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col flex-1 w-full gap-2">
                   <h3 className="text-lg font-bold">{education.name}</h3>
@@ -105,7 +109,7 @@ const PrevArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-orange-500 rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300`}
+      className={`${className} bg-orange-500 rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300 hidden sm:flex`}
       style={{ ...style, display: "block", left: "-40px" }}
       onClick={onClick}
     >
@@ -118,7 +122,7 @@ const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-orange-500 flex justify-center items-center rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300`}
+      className={`${className} bg-orange-500 flex justify-center items-center rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300 hidden sm:flex`}
       style={{ ...style, display: "block", right: "-40px" }}
       onClick={onClick}
     >
