@@ -29,7 +29,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="p-8 flex flex-col gap-5 "
+      className="p-8 flex flex-col gap-5 pt-20"
       data-aos="fade-up"
     >
       <div className="flex gap-2 items-center">

@@ -8,7 +8,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" text-white p-4 fixed w-full top-0 z-10 shadow-lg mb-20">
+    <nav
+      id="navbar"
+      className="text-white bg-gray-800 p-4 fixed w-full top-0 z-10 shadow-lg mb-20"
+    >
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <a href="#home" className="hover:text-gray-400">
@@ -19,17 +22,20 @@ const Navbar = () => {
           <a href="#about" className="hover:text-gray-400">
             About Me
           </a>
+          <a href="#education" className="hover:text-gray-400">
+            Education
+          </a>
           <a href="#experience" className="hover:text-gray-400">
             Experience
           </a>
           <a href="#projects" className="hover:text-gray-400">
             Projects
           </a>
-          <a href="#education" className="hover:text-gray-400">
-            Education
-          </a>
           <a href="#skills" className="hover:text-gray-400">
             Skills
+          </a>
+          <a href="#contact" className="hover:text-gray-400">
+            Contact
           </a>
         </div>
         <div className="md:hidden">

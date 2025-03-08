@@ -27,6 +27,7 @@ const ExperienceCard = ({
   return (
     <>
       <div
+        id="experience"
         className="overflow-hidden duration-500 bg-gray-900 p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-orange-500 hover:shadow-xl group flex flex-col justify-between ring-2 ring-blue-950/50 hover:ring-orange-500 cursor-pointer"
         onClick={openModal}
       >

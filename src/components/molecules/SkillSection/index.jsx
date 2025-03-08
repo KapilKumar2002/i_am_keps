@@ -13,7 +13,7 @@ const skills = [
 
 const SkillSection = () => {
   return (
-    <div className="py-12  flex flex-col items-center">
+    <div id="skills" className="py-12  flex flex-col items-center pt-20">
       <div className="pb-10">
         <h2 className="text-3xl font-bold text-center mb-2 px-4">Skills</h2>
         <div className="h-2 w-full bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
