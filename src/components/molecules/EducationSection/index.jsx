@@ -122,7 +122,7 @@ const NextArrow = (props) => {
   const { className, style, onClick } = props;
   return (
     <div
-      className={`${className} bg-orange-500 flex justify-center items-center rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300 hidden sm:flex`}
+      className={`${className} bg-orange-500 justify-center items-center rounded-full p-2 shadow-lg hover:bg-orange-600 transition duration-300 hidden sm:flex`}
       style={{ ...style, display: "block", right: "-40px" }}
       onClick={onClick}
     >
