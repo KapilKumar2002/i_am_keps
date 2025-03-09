@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import navTabs from "../../../data/navTabs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,38 +8,38 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav
       id="navbar"
       className="text-white bg-gray-800 p-4 fixed w-full top-0 z-10 shadow-lg mb-20"
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex max-md:flex-col max-md:gap-10 max-md:items-start justify-between items-center">
         <div className="text-2xl font-bold">
           <a href="#home" className="hover:text-gray-400">
             Keps
           </a>
         </div>
-        <div className="hidden md:flex space-x-4">
-          <a href="#about" className="hover:text-gray-400">
-            About Me
-          </a>
-          <a href="#education" className="hover:text-gray-400">
-            Education
-          </a>
-          <a href="#experience" className="hover:text-gray-400">
-            Experience
-          </a>
-          <a href="#projects" className="hover:text-gray-400">
-            Projects
-          </a>
-          <a href="#skills" className="hover:text-gray-400">
-            Skills
-          </a>
-          <a href="#contact" className="hover:text-gray-400">
-            Contact
-          </a>
+        <div
+          className={`flex max-md:flex-col  max-md: md:space-x-4 max-md:bg-gray-800  max-md:absolute max-md:w-full left-0  duration-1000  ${
+            isOpen ? "p-4  top-16" : "-top-96"
+          }`}
+        >
+          {navTabs.map((tab, index) => (
+            <a
+              key={index}
+              href={tab.href}
+              className="hover:text-orange-500"
+              onClick={closeMenu}
+            >
+              {tab.label}
+            </a>
+          ))}
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden z-50 absolute right-4">
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none"
@@ -60,25 +61,6 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isOpen && (
-        <div className="md:hidden bg-gray-800 text-white p-4">
-          <a href="#about" className="block py-2 hover:text-gray-400">
-            About Me
-          </a>
-          <a href="#experience" className="block py-2 hover:text-gray-400">
-            Experience
-          </a>
-          <a href="#projects" className="block py-2 hover:text-gray-400">
-            Projects
-          </a>
-          <a href="#education" className="block py-2 hover:text-gray-400">
-            Education
-          </a>
-          <a href="#skills" className="block py-2 hover:text-gray-400">
-            Skills
-          </a>
-        </div>
-      )}
     </nav>
   );
 };

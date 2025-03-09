@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaMapMarkerAlt, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import educationData from "../../../data/educationData.json";
+import educationData from "../../../data/educationData";
 
 const EducationSection = () => {
   const settings = {
@@ -52,7 +52,7 @@ const EducationSection = () => {
                 <img
                   src={education.image}
                   alt={education.name}
-                  className="w-full md:max-w-xs md:h-60 lg:max-w-lg h-auto object-cover rounded-lg shadow-lg"
+                  className="w-full md:max-w-xs md:h-60 h-auto object-cover rounded-lg shadow-lg"
                 />
                 <div className="flex flex-col flex-1 w-full gap-2">
                   <h3 className="text-lg font-bold">{education.name}</h3>

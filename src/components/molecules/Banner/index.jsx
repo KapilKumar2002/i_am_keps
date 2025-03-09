@@ -1,12 +1,12 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { FaDownload } from "react-icons/fa";
-import { profile_image } from "../../../assets";
+import { profile_image } from "../../../assets/images";
 
 const Banner = () => {
   return (
     <div id="about" className="pt-20">
-      <div className="flex flex-col-reverse gap-10 max-w-7xl  mx-auto md:flex-row items-center justify-center p-8 md:h-[60vh]">
+      <div className="flex flex-col-reverse gap-10 max-w-7xl  mx-auto md:flex-row items-center justify-center md:p-8 p-3 md:h-[60vh]">
         {/* Left Section */}
         <div className="text-white  flex flex-col justify-center md:items-start w-full">
           <h2 className="text-2xl font-bold mb-4">Hi, I'm</h2>
@@ -68,7 +68,7 @@ const Banner = () => {
             <img
               src={profile_image}
               alt="Kapil Kumar"
-              className="max-w-96 max-h-96 rounded-full shadow-lg object-cover ring-2 ring-gray-400/10 hover:scale-105 transform duration-500"
+              className="max-w-80 max-h-80 rounded-full shadow-lg object-cover ring-2 ring-gray-400/10 hover:scale-105 transform duration-500"
             />
           </div>
         </div>

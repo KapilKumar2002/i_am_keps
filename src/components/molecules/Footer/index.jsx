@@ -10,28 +10,28 @@ const Footer = () => {
           <div className="mb-4 md:mb-0 text-center md:text-left">
             <h2 className="text-lg font-semibold">Contact</h2>
             <p className="text-sm">Kapil Kumar</p>
-            <p className="text-sm">Email: kapil.kumar@example.com</p>
+            <p className="text-sm">Email: kapil.work.2002@gmail.com</p>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex space-x-4 mb-4 md:mb-0">
+          <div className="flex flex-col items-start fixed left-0 bg-orange-900 bottom-14 p-4 gap-5 ring-2 ring-orange-500 rounded-r-lg">
             <a
               href="https://www.linkedin.com/in/kapil-kumar-mathur/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500 transition-colors duration-300"
+              className="text-white hover:scale-105 hover:text-blue-500 transition-colors duration-300"
             >
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://github.com/kapilkumar"
+              href="https://github.com/KapilKumar2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-500 transition-colors duration-300"
+              className="text-white hover:scale-105 hover:text-gray-500 transition-colors duration-300"
             >
               <FaGithub size={24} />
             </a>
-            <a
+            {/* <a
               href="https://twitter.com/kapilkumar"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const Footer = () => {
               className="text-white hover:text-red-500 transition-colors duration-300"
             >
               <FaEnvelope size={24} />
-            </a>
+            </a> */}
           </div>
 
           {/* Brief Description */}
