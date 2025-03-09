@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="md:p-8 p-3 flex flex-col gap-5 pt-28"
+      className="flex flex-col gap-5 pt-28 p-8 max-sm:p-3"
       data-aos="fade-up"
     >
       <div className="flex gap-2 items-center">

@@ -38,7 +38,8 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="p-4 sm:p-8 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
+      data-aos="fade-up"
+      className="p-8 max-sm:p-3 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
     >
       <div className="flex gap-2 items-center justify-center">
         <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>

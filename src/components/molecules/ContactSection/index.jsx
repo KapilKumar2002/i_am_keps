@@ -23,7 +23,10 @@ const ContactSection = () => {
           <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
           <h2 className="text-3xl font-bold">Contact</h2>
         </div>
-        <div className="flex flex-col w-full gap-4 max-lg:mt-8">
+        <div
+          className="flex flex-col w-full gap-4 max-lg:mt-8"
+          data-aos="fade-left"
+        >
           <div className="flex flex-wrap max-md:flex-col   gap-4">
             {contactInfo.map((info, index) => (
               <div
@@ -37,7 +40,10 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1 max-lg:w-96 max-sm:w-full mx-auto">
+      <div
+        className="flex-1 max-lg:w-96 max-sm:w-full mx-auto"
+        data-aos="fade-right"
+      >
         <form className="duration-500 hover:scale-105 w-full mx-auto ring-2 hover:ring-orange-500 ring-gray-400/10 p-6 rounded-lg shadow-xl shadow-orange-500">
           <div className="mb-4">
             <label className="block text-gray-300 mb-2" htmlFor="name">

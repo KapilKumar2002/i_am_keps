@@ -68,7 +68,7 @@ const Banner = () => {
             <img
               src={profile_image}
               alt="Kapil Kumar"
-              className="max-w-80 max-h-80 rounded-full shadow-lg object-cover ring-2 ring-gray-400/10 hover:scale-105 transform duration-500"
+              className="md:max-w-80 md:max-h-80 max-h-72 max-w-72 rounded-full shadow-lg object-cover ring-2 ring-gray-400/10 hover:scale-105 transform duration-500"
             />
           </div>
         </div>

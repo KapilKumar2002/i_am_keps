@@ -12,6 +12,7 @@ const SkillSection = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
+            data-aos="fade-left"
             className="flex flex-col items-center p-4 transform transition duration-500 hover:scale-105"
           >
             <div className="rounded-full overflow-hidden hover:ring-orange-500 hover:shadow-lg bg-white ring-2 hover:shadow-orange-500 ring-black shadow-[rgba(0,0,0,1)_5px_5px_0px_1px]">

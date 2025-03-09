@@ -8,26 +8,13 @@ import ProjectSection from "./components/molecules/ProjectSection";
 import SkillSection from "./components/molecules/SkillSection";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from "react";
+import Aos from "aos";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Layout />, // Parent route
-//     children: [
-//       { path: "", element: <Banner /> },
-//       { path: "mail", element: <Mailbox /> },
-//       { path: "github", element: <GithubProjects /> },
-//       { path: "linkedin", element: <LinkedIn /> },
-//       { path: "skills", element: <Launchpad /> },
-//     ],
-//   },
-
-//   // {
-//   //   path: "*",
-//   //   element: <Loader />,
-//   // },
-// ]);
 const App = () => {
+  useEffect(() => {
+    Aos.init({ once: true, duration: 1000 });
+  }, []);
   return (
     <>
       <Navbar />

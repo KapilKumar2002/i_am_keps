@@ -6,7 +6,7 @@ const ProjectSection = () => {
   return (
     <section
       id="projects"
-      className="md:p-8 p-3 flex flex-col gap-5 pt-20"
+      className="p-8 max-sm:p-3 flex flex-col gap-5 pt-20"
       data-aos="fade-up"
     >
       <div className="flex gap-2 items-center">

@@ -25,11 +25,15 @@ const ProjectCard = ({
           className="w-full h-40 object-cover rounded-t-lg"
         />
         <div className="p-4 flex-grow">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center max-md:mb-2">
             <h3 className="font-bold text-white">{name}</h3>
-            <div className="flex gap-4 text-orange-500">
-              <FaGithub />
-              <FaExternalLinkAlt />
+            <div className="flex gap-4  md:hidden">
+              <div className="p-2 rounded-md ring-2 ring-gray-400/10 hover:bg-orange-500 hover:text-black hover:scale-105 duration-700 shadow-lg">
+                <FaGithub />
+              </div>
+              <div className="p-2 rounded-md ring-2 ring-gray-400/10 hover:bg-orange-500 hover:text-black hover:scale-105 duration-700 shadow-lg">
+                <FaExternalLinkAlt />
+              </div>
             </div>
           </div>
           <div className="flex justify-between mb-2 text-xs text-gray-400">
@@ -50,7 +54,7 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div className="absolute top-96 group-hover:top-0 w-full duration-700 h-full bg-orange-500 bg-opacity-40 p-4">
+        <div className="max-md:hidden absolute -top-96 group-hover:top-0 w-full duration-700 h-full bg-orange-500 bg-opacity-40 p-4">
           <div className="flex bg-gray-800 rounded-lg ring-2 ring-orange-500 h-full w-full justify-center items-center gap-4">
             <div
               onClick={openModal}
