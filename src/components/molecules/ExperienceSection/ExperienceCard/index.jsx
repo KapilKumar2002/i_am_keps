@@ -45,12 +45,15 @@ const ExperienceCard = ({
                   </div>
                   <h4 className="text-xs">({jobType})</h4>
                 </div>
-                <div className="text-gray-300 transition-all duration-300 md:text-sm text-xs line-clamp-4 mb-2">
-                  {description.split("\n\n").map((para, index) => (
-                    <p key={index} className="mb-2">
-                      {para}
-                    </p>
-                  ))}
+                <div className="text-gray-300 transition-all duration-300 md:text-sm text-xs mb-2">
+                  {description
+                    .substr(0, 300)
+                    .split("\n\n")
+                    .map((para, index) => (
+                      <p key={index} className="mb-2">
+                        {para}
+                      </p>
+                    ))}
                 </div>
               </div>
               <div
