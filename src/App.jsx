@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from "react";
 import Aos from "aos";
+import AchievementSection from "./components/molecules/AchievementSection";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <ExperienceSection />
       <ProjectSection />
       <SkillSection />
+      <AchievementSection />
       <ContactSection />
       <Footer />
     </>
