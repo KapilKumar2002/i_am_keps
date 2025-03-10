@@ -33,7 +33,7 @@ const ExperienceCard = ({
             <img
               src={image}
               alt=""
-              className="h-32 w-32 max-sm:w-20 max-sm:h-20  shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] group-hover:shadow-orange-500 object-cover rounded-lg  ring-2 ring-gray-400/10 group-hover:ring-orange-500"
+              className="h-32 w-32 max-sm:w-24 max-sm:h-24  shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] group-hover:shadow-orange-500 object-cover rounded-lg  ring-2 ring-gray-400/10 group-hover:ring-orange-500"
             />
             <div className="flex flex-col items-start">
               <h3 className="text-sm font-bold text-white text-center">
