@@ -44,7 +44,7 @@ const ModalForMore = (props) => {
           <img
             src={image}
             alt=""
-            className="md:h-60 sm:h-52 h-40 w-full object-cover"
+            className="md:h-56 sm:h-48 h-36 w-full object-cover"
           />
           <div className="p-2">
             <div className="flex justify-between items-center md:mb-4 mb-2">
