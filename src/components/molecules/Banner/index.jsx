@@ -1,7 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { profile_image } from "../../../assets/images";
+import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const Banner = () => {
   return (
@@ -47,20 +48,38 @@ const Banner = () => {
         <div className="h-full w-full">
           <div className="max-md:hidden h-full w-72 relative group mx-auto">
             <div className="h-full w-72 rounded-lg group-hover:ring-orange-500 ring-4 ring-gray-600/50 shadow-lg shadow-orange-500 rotate-6 group-hover:rotate-0 duration-500 absolute"></div>
-            <div className="h-full w-72 rounded-lg ring-4 group-hover:ring-orange-500 ring-gray-600/50 shadow-lg shadow-orange-500 -rotate-6 group-hover:rotate-0 duration-500 absolute bg-gray-800 flex flex-col items-center p-4">
-              <div className="w-52 h-52 ring-2 ring-gray-400/10 rounded-full shadow-lg shadow-orange-500 group-hover:shadow-none duration-500 overflow-hidden">
-                <img src={profile_image} className="w-full h-full" alt="" />
+            <div className="h-full w-72 justify-between rounded-lg ring-4 group-hover:ring-orange-500 ring-gray-600/50 shadow-lg shadow-orange-500 -rotate-6 group-hover:rotate-0 duration-500 absolute bg-gray-800 flex flex-col items-center p-4">
+              <div>
+                <div className="w-52 h-52 ring-2 ring-gray-400/10 rounded-full shadow-lg shadow-orange-500 group-hover:shadow-none duration-500 overflow-hidden">
+                  <img src={profile_image} className="w-full h-full" alt="" />
+                </div>
+                <div className="flex flex-col items-center pt-4">
+                  <div className="pt-4">
+                    <h3 className="text-xl font-bold mb-2 text-white text-center">
+                      Kapil Kumar
+                    </h3>
+                    {/* <p className="text-gray-300">MERN Stack Developer</p>
+                  <p className="text-gray-300">Web Enthusiast</p>
+                  <p className="text-gray-300">Tech Lover</p> */}
+                  </div>
+                  <div className="px-4 py-2 bg-orange-500 rounded-md text-white shadow-[rgba(0,0,0,1)_10px_10px_0px_1px] mt-4 hover:shadow-none hover:translate-y-1 duration-500 hover:scale-105">
+                    ABOUT ME
+                  </div>
+                </div>
               </div>
-              <div className="pt-4">
-                <h3 className="text-xl font-bold mb-2 text-white text-center">
-                  Kapil Kumar
-                </h3>
-                <p className="text-gray-300">MERN Stack Developer</p>
-                <p className="text-gray-300">Web Enthusiast</p>
-                <p className="text-gray-300">Tech Lover</p>
-              </div>
-              <div className="px-4 py-2 bg-orange-500 rounded-md text-white shadow-[rgba(0,0,0,1)_10px_10px_0px_1px] mt-4 hover:shadow-none hover:translate-y-1 duration-500 hover:scale-105">
-                ABOUT ME
+              <div className="flex gap-4 mt-4">
+                <div className="social-icon hover:text-black">
+                  <FaGithub />
+                </div>
+                <div className="social-icon hover:text-blue-700">
+                  <FaLinkedin />
+                </div>
+                <div className="social-icon hover:text-green-700">
+                  <SiGeeksforgeeks />
+                </div>
+                <div className="social-icon hover:text-orange-500">
+                  <SiLeetcode />
+                </div>
               </div>
             </div>
           </div>

@@ -12,6 +12,7 @@ const experienceData = [
     liveLink: "https://your-live-project-link.com",
     timePeriod: "Nov 2024 - Present",
     location: "Chandigarh, India",
+    role: "Software Developer",
   },
   {
     image: webxela_logo,
@@ -24,6 +25,7 @@ const experienceData = [
     liveLink: "https://your-live-project-link.com",
     timePeriod: "Jan 2024 - Oct 2024",
     location: "Bengaluru, Karnataka, India",
+    role: "Flutter Developer",
   },
   {
     image: talentmonk,
@@ -36,6 +38,7 @@ const experienceData = [
     liveLink: "https://your-live-project-link.com",
     timePeriod: "Nov 2023 - Jan 2024",
     location: "Bengaluru, Karnataka, India",
+    role: "Full-stack Developer",
   },
   {
     image:
@@ -49,6 +52,7 @@ const experienceData = [
     liveLink: "https://your-live-project-link.com",
     timePeriod: "Mar 2023 - Jul 2023",
     location: "Kolkata, West Bengal, India",
+    role: "Flutter Developer",
   },
   {
     image:
@@ -62,6 +66,7 @@ const experienceData = [
     liveLink: "https://your-live-project-link.com",
     timePeriod: "Dec 2022 - Feb 2023",
     location: "Pune, Maharashtra, India",
+    role: "Flutter Developer",
   },
 ];
 

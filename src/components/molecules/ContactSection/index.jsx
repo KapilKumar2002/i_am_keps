@@ -15,7 +15,6 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      data-aos="fade-up"
       className="md:p-8 p-5 mb-14 text-white flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
     >
       <div className="flex-1 flex flex-col gap-4 max-lg:max-w-2xl mx-auto">
@@ -40,10 +39,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <div
-        className="flex-1 max-lg:w-96 max-sm:w-full mx-auto"
-        data-aos="fade-right"
-      >
+      <div className="flex-1 max-lg:w-96 max-sm:w-full mx-auto">
         <form className="duration-500 hover:scale-105 w-full mx-auto ring-2 hover:ring-orange-500 ring-gray-400/10 p-6 rounded-lg shadow-xl shadow-orange-500">
           <div className="mb-4">
             <label className="block text-gray-300 mb-2" htmlFor="name">

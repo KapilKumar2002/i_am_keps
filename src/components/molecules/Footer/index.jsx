@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex flex-col items-start fixed left-0 bg-orange-900 bottom-14 p-4 gap-5 ring-2 ring-orange-500 rounded-r-lg">
+          <div className="flex flex-col md:hidden items-start fixed left-0 bg-orange-900 bottom-14 p-4 gap-5 ring-2 ring-orange-500 rounded-r-lg">
             <a
               href="https://www.linkedin.com/in/kapil-kumar-mathur/"
               target="_blank"

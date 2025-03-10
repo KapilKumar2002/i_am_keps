@@ -12,9 +12,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
-  }, []);
   return (
     <>
       <Navbar />
