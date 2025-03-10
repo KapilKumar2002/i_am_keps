@@ -9,6 +9,7 @@ const ExperienceCard = ({
   description,
   location,
   timePeriod,
+  banner,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -69,7 +70,7 @@ const ExperienceCard = ({
             title: "Software Developer",
             description: description,
             type: jobType,
-            image: image,
+            image: banner,
             timePeriod: timePeriod,
             location: location,
           }}

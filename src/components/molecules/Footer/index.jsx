@@ -1,5 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -14,37 +15,39 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex flex-col md:hidden items-start fixed left-0 bg-orange-900 bottom-14 p-4 gap-5 ring-2 ring-orange-500 rounded-r-lg">
+          <div className="flex flex-col max-md:hidden items-start fixed left-0 bg-orange-900 bottom-14 px-2 py-4 gap-4 ring-2 ring-orange-500 rounded-r-lg">
             <a
               href="https://www.linkedin.com/in/kapil-kumar-mathur/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:scale-105 hover:text-blue-500 transition-colors duration-300"
             >
-              <FaLinkedin size={24} />
+              <FaLinkedin size={20} />
             </a>
             <a
               href="https://github.com/KapilKumar2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:scale-105 hover:text-gray-500 transition-colors duration-300"
+              className="text-white hover:scale-105 hover:text-orange-500 transition-colors duration-300"
             >
-              <FaGithub size={24} />
-            </a>
-            {/* <a
-              href="https://twitter.com/kapilkumar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 transition-colors duration-300"
-            >
-              <FaTwitter size={24} />
+              <SiLeetcode size={20} />
             </a>
             <a
-              href="mailto:kapil.kumar@example.com"
-              className="text-white hover:text-red-500 transition-colors duration-300"
+              href="https://www.linkedin.com/in/kapil-kumar-mathur/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:scale-105 hover:text-green-500 transition-colors duration-300"
             >
-              <FaEnvelope size={24} />
-            </a> */}
+              <SiGeeksforgeeks size={20} />
+            </a>
+            <a
+              href="https://github.com/KapilKumar2002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:scale-105 hover:text-black transition-colors duration-300"
+            >
+              <FaGithub size={20} />
+            </a>
           </div>
 
           {/* Brief Description */}

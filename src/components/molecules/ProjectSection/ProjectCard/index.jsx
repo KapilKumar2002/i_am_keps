@@ -22,7 +22,7 @@ const ProjectCard = ({
         <img
           src={image}
           alt={name}
-          className="w-full h-40 object-cover rounded-t-lg"
+          className="w-full max-h-40 h-full object-cover rounded-t-lg"
         />
         <div className="p-4 flex-grow">
           <div className="flex justify-between items-center max-md:mb-2">

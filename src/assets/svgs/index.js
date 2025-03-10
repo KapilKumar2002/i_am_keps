@@ -7,6 +7,8 @@ import mysql from "./mysql.svg";
 import postgresql from "./postgresql-icon.svg";
 import python from "./Python.svg";
 import sqlite from "./sqlite.svg";
+import flutter from "./flutter.svg";
+import firebase from "./firebase.svg";
 
 export {
   nodejs,
@@ -18,4 +20,6 @@ export {
   postgresql,
   python,
   sqlite,
+  flutter,
+  firebase,
 };

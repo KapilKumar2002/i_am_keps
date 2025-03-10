@@ -1,4 +1,15 @@
-import { netfrux_logo, talentmonk, webxela_logo } from "../assets/images";
+import {
+  lll,
+  lll_banner,
+  netfrux_banner,
+  netfrux_logo,
+  shellcode,
+  shellcode_banner,
+  talentmonk,
+  talentmonk_banner,
+  webxela_banner,
+  webxela_logo,
+} from "../assets/images";
 
 const experienceData = [
   {
@@ -13,6 +24,7 @@ const experienceData = [
     timePeriod: "Nov 2024 - Present",
     location: "Chandigarh, India",
     role: "Software Developer",
+    banner: netfrux_banner,
   },
   {
     image: webxela_logo,
@@ -26,6 +38,7 @@ const experienceData = [
     timePeriod: "Jan 2024 - Oct 2024",
     location: "Bengaluru, Karnataka, India",
     role: "Flutter Developer",
+    banner: webxela_banner,
   },
   {
     image: talentmonk,
@@ -39,10 +52,10 @@ const experienceData = [
     timePeriod: "Nov 2023 - Jan 2024",
     location: "Bengaluru, Karnataka, India",
     role: "Full-stack Developer",
+    banner: talentmonk_banner,
   },
   {
-    image:
-      "https://waz.smartdraw.com/working-smarter/img/how-to-create-a-project-planning-map.svg?bn=15100111939",
+    image: lll,
     company: "Little Leagues Live",
     jobType: "Internship",
     description:
@@ -53,10 +66,10 @@ const experienceData = [
     timePeriod: "Mar 2023 - Jul 2023",
     location: "Kolkata, West Bengal, India",
     role: "Flutter Developer",
+    banner: lll_banner,
   },
   {
-    image:
-      "https://waz.smartdraw.com/working-smarter/img/how-to-create-a-project-planning-map.svg?bn=15100111939",
+    image: shellcode,
     company: "ShellCode Solutions",
     jobType: "Internship",
     description:
@@ -67,6 +80,7 @@ const experienceData = [
     timePeriod: "Dec 2022 - Feb 2023",
     location: "Pune, Maharashtra, India",
     role: "Flutter Developer",
+    banner: shellcode_banner,
   },
 ];
 

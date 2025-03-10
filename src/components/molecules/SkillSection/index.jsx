@@ -8,7 +8,7 @@ const SkillSection = () => {
         <h2 className="text-3xl font-bold text-center mb-2 px-4">Skills</h2>
         <div className="h-2 w-full bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
       </div>
-      <div className="flex flex-wrap justify-center md:gap-6 gap-2 max-w-4xl">
+      <div className="flex flex-wrap justify-center md:gap-6 gap-2 max-w-3xl">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -19,7 +19,7 @@ const SkillSection = () => {
               <img
                 src={skill.image}
                 alt={skill.name}
-                className="w-12 h-12 sm:w-24 sm:h-24 md:w-28 md:h-28 p-2 sm:p-4 md:p-8  object-cover   duration-200"
+                className=" md:w-24 md:h-24 w-12 h-12 sm:w-20 sm:h-20 p-2 sm:p-3 md:p-4  object-cover   duration-200"
               />
             </div>
             <p className="mt-2 md:text-sm text-xs font-medium">{skill.name}</p>

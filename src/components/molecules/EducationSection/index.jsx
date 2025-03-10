@@ -25,14 +25,6 @@ const EducationSection = () => {
         },
       },
     ],
-    customPaging: (i) => (
-      <div className="w-3 h-3 rounded-full bg-orange-200"></div>
-    ),
-    appendDots: (dots) => (
-      <div>
-        <ul className="flex justify-center gap-2 mt-4">{dots}</ul>
-      </div>
-    ),
   };
 
   return (
@@ -54,18 +46,18 @@ const EducationSection = () => {
                   alt={education.name}
                   className="w-full md:max-w-xs md:h-60 h-auto object-cover rounded-lg shadow-lg"
                 />
-                <div className="flex flex-col flex-1 w-full gap-2">
-                  <h3 className="text-lg font-bold">{education.name}</h3>
+                <div className="flex flex-col flex-1 w-full gap-1">
+                  <h3 className="font-bold">{education.name}</h3>
                   <p className="text-sm">Degree: {education.degree}</p>
-                  <p className="text-sm">
+                  <p className="text-xs">
                     Field of Study: {education.fieldOfStudy}
                   </p>
                   <p className="text-xs">Type: {education.type}</p>
-                  <h1 className="text-lg ">Description:</h1>
+                  <h1 className="text-sm ">Description:</h1>
                   <p className="text-xs text-gray-400">
                     {education.description.substring(0, 50)}...
                   </p>
-                  <p className="text-sm font-semibold">
+                  <p className="text-xs font-semibold">
                     Core subjects studied:
                   </p>
                   <ul className="flex gap-2 flex-wrap">

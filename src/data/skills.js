@@ -1,5 +1,7 @@
 import {
   docker,
+  firebase,
+  flutter,
   html,
   mongodb,
   mysql,
@@ -18,6 +20,8 @@ const skills = [
   { name: "Docker", image: docker },
   { name: "HTML-5", image: html },
   { name: "SQLite", image: sqlite },
+  { name: "Firebase", image: firebase },
+  { name: "Flutter", image: flutter },
 ];
 
 export default skills;
