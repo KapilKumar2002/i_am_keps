@@ -54,7 +54,7 @@ const ProjectCard = ({
             ))}
           </div>
         </div>
-        <div className="max-md:hidden absolute -top-96 group-hover:top-0 w-full duration-700 h-full bg-orange-500 bg-opacity-40 p-4">
+        <div className="absolute -top-96 group-hover:top-0 w-full duration-700 h-full bg-orange-500 bg-opacity-40 p-4">
           <div className="flex bg-gray-800 rounded-lg ring-2 ring-orange-500 h-full w-full justify-center items-center gap-4">
             <div
               onClick={openModal}

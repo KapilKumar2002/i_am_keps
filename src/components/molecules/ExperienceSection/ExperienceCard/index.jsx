@@ -18,10 +18,7 @@ const ExperienceCard = ({
   return (
     <>
       <div className="mt-20" data-aos="fade-up">
-        <div
-          onClick={openModal}
-          className="relative flex flex-col ring-2 shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] duration-700 ring-gray-400/10 hover:ring-orange-500 hover:shadow-orange-500 h-full  p-4 rounded-lg group"
-        >
+        <div className="relative flex flex-col ring-2 shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] duration-700 ring-gray-400/10 hover:ring-orange-500 hover:shadow-orange-500 h-full  p-4 rounded-lg group">
           <div className="-mt-20 flex justify-between items-end">
             <img
               src={image}
@@ -55,9 +52,12 @@ const ExperienceCard = ({
                   ))}
                 </div>
               </div>
-              <button className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
+              <div
+                onClick={openModal}
+                className="bg-orange-500 text-white font-bold py-2 px-4 rounded"
+              >
                 Learn More
-              </button>
+              </div>
             </div>
           </div>
         </div>

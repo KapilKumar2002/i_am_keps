@@ -25,7 +25,7 @@ const ModalForMore = (props) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-      <div className="bg-gray-800 rounded-lg max-w-2xl md:max-h-full   w-full ring-2 ring-orange-500 shadow-lg shadow-orange-500 overflow-y-scroll scrollbar">
+      <div className="bg-gray-800 rounded-lg max-w-2xl max-h-full   w-full ring-2 ring-orange-500 shadow-lg shadow-orange-500 overflow-y-scroll scrollbar">
         <div className="bg-gray-900 w-full sticky top-0 p-4 rounded-t-lg flex justify-between items-center">
           <button onClick={onClose} className="">
             <FaChevronLeft className="w-6 h-6" />
