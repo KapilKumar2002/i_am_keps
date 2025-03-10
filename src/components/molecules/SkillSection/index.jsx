@@ -4,7 +4,10 @@ import Title from "../../atoms/Title";
 
 const SkillSection = () => {
   return (
-    <div id="skills" className="flex flex-col items-center pt-20 max-md:px-3">
+    <div
+      id="skills"
+      className="flex flex-col items-center pt-20 max-md:px-3 gap-8"
+    >
       <Title title={"Skills"} />
       <div className="flex flex-wrap justify-center md:gap-6 gap-2 max-w-3xl">
         {skills.map((skill, index) => (

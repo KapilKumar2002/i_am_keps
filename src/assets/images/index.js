@@ -11,6 +11,7 @@ import talentmonk_banner from "./talentmonk_banner.png";
 import netfrux_banner from "./nft_banner.png";
 import project from "./project.png";
 import iiitu from "./IIIT-Una.jpg";
+import quote from "./quote.png";
 
 export {
   profile_image,
@@ -25,5 +26,6 @@ export {
   talentmonk_banner,
   netfrux_banner,
   project,
+  quote,
   iiitu,
 };

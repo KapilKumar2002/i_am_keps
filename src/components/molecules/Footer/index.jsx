@@ -50,6 +50,21 @@ const Footer = () => {
             </a>
           </div>
 
+          <div className="flex gap-4 mt-4 max-md:hidden">
+            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-black">
+              <FaGithub />
+            </div>
+            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-blue-700">
+              <FaLinkedin />
+            </div>
+            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-green-700">
+              <SiGeeksforgeeks />
+            </div>
+            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-orange-500">
+              <SiLeetcode />
+            </div>
+          </div>
+
           {/* Brief Description */}
           <div className="text-center md:text-right">
             <p className="text-sm">
