@@ -67,7 +67,7 @@ const ExperienceCard = ({
               </div>
               <div
                 onClick={openModal}
-                className="bg-orange-500 text-white font-bold md:py-2 md:px-4 rounded max-md:text-sm py-1 px-2"
+                className="bg-orange-500 text-white font-bold py-2 px-4 rounded max-md:text-sm"
               >
                 Learn More
               </div>

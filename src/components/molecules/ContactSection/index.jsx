@@ -1,18 +1,16 @@
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import contactInfo from "../../../data/contactInfo";
+import Title from "../../atoms/Title";
 
 const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="md:p-8 p-5 mb-14 text-white flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
+      className="p-8 max-md:px-3 mb-14 text-white flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
     >
       <div className="flex-1 flex flex-col gap-4 max-lg:max-w-2xl mx-auto">
-        <div className="flex gap-2 items-center lg:justify-start justify-center mt-16">
-          <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
-          <h2 className="text-3xl font-bold">Contact</h2>
-        </div>
+        <Title title={"Contact"} />
         <div
           className="flex flex-col w-full gap-4 max-lg:mt-8"
           data-aos="fade-left"

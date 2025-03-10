@@ -1,13 +1,11 @@
 import React from "react";
 import skills from "../../../data/skills";
+import Title from "../../atoms/Title";
 
 const SkillSection = () => {
   return (
-    <div id="skills" className="flex flex-col items-center pt-20">
-      <div className="pb-10">
-        <h2 className="text-3xl font-bold text-center mb-2 px-4">Skills</h2>
-        <div className="h-2 w-full bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
-      </div>
+    <div id="skills" className="flex flex-col items-center pt-20 max-md:px-3">
+      <Title title={"Skills"} />
       <div className="flex flex-wrap justify-center md:gap-6 gap-2 max-w-3xl">
         {skills.map((skill, index) => (
           <div
