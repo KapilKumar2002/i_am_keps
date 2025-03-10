@@ -28,72 +28,76 @@ const EducationSection = () => {
   };
 
   return (
-    <section
-      id="education"
-      className="p-8 max-sm:p-3 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
-    >
-      <div className="flex gap-2 items-center justify-center">
-        <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">Education</h2>
-      </div>
-      <Slider {...settings}>
-        {educationData.map((education, index) => (
-          <div key={index} className="p-4 sm:p-6">
-            <div className="relative p-4 sm:p-6 ring-2 ring-gray-400/10 bg-gray-800 rounded-lg transition duration-300 hover:shadow-lg hover:shadow-orange-500">
-              <div className="flex flex-col md:flex-row items-start gap-4 sm:gap-6">
-                <img
-                  src={education.image}
-                  alt={education.name}
-                  className="w-full md:max-w-xs md:h-60 h-auto object-cover rounded-lg shadow-lg"
-                />
-                <div className="flex flex-col flex-1 w-full gap-1">
-                  <h3 className="font-bold">{education.name}</h3>
-                  <p className="text-sm">Degree: {education.degree}</p>
-                  <p className="text-xs">
-                    Field of Study: {education.fieldOfStudy}
-                  </p>
-                  <p className="text-xs">Type: {education.type}</p>
-                  <h1 className="text-sm ">Description:</h1>
-                  <p className="text-xs text-gray-400">
-                    {education.description.substring(0, 50)}...
-                  </p>
-                  <p className="text-xs font-semibold">
-                    Core subjects studied:
-                  </p>
-                  <ul className="flex gap-2 flex-wrap">
-                    {education.coreSubjects.map((subject, idx) => (
-                      <li
-                        key={idx}
-                        className="transition duration-300 text-xs hover:bg-orange-600 hover:text-white p-1 rounded-lg ring-2 ring-orange-500"
-                      >
-                        {subject}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="absolute top-4 left-4 text-6xl text-orange-500 opacity-20">
-                    &ldquo;
-                  </div>
-                  <div className="absolute bottom-4 right-4 text-6xl text-orange-500 opacity-20">
-                    &rdquo;
+    <>
+      {/* <section
+        id="education"
+        className="p-8 max-sm:p-3 text-white max-w-5xl mx-auto flex flex-col gap-10 pt-20"
+      >
+        <div className="flex gap-2 items-center justify-center">
+          <div className="h-10 w-2 bg-orange-500 rounded-full shadow-2xl shadow-orange-500"></div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            Education
+          </h2>
+        </div>
+        <Slider {...settings}>
+          {educationData.map((education, index) => (
+            <div key={index} className="p-4 sm:p-6">
+              <div className="relative p-4 sm:p-6 ring-2 ring-gray-400/10 bg-gray-800 rounded-lg transition duration-300 hover:shadow-lg hover:shadow-orange-500">
+                <div className="flex flex-col md:flex-row items-start gap-4 sm:gap-6">
+                  <img
+                    src={education.image}
+                    alt={education.name}
+                    className="w-full md:max-w-xs md:h-60 h-auto object-cover rounded-lg shadow-lg"
+                  />
+                  <div className="flex flex-col flex-1 w-full gap-1">
+                    <h3 className="font-bold">{education.name}</h3>
+                    <p className="text-sm">Degree: {education.degree}</p>
+                    <p className="text-xs">
+                      Field of Study: {education.fieldOfStudy}
+                    </p>
+                    <p className="text-xs">Type: {education.type}</p>
+                    <h1 className="text-sm ">Description:</h1>
+                    <p className="text-xs text-gray-400">
+                      {education.description.substring(0, 50)}...
+                    </p>
+                    <p className="text-xs font-semibold">
+                      Core subjects studied:
+                    </p>
+                    <ul className="flex gap-2 flex-wrap">
+                      {education.coreSubjects.map((subject, idx) => (
+                        <li
+                          key={idx}
+                          className="transition duration-300 text-xs hover:bg-orange-600 hover:text-white p-1 rounded-lg ring-2 ring-orange-500"
+                        >
+                          {subject}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="absolute top-4 left-4 text-6xl text-orange-500 opacity-20">
+                      &ldquo;
+                    </div>
+                    <div className="absolute bottom-4 right-4 text-6xl text-orange-500 opacity-20">
+                      &rdquo;
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-2 mt-4">
-                <FaMapMarkerAlt size={20} />
-                <a
-                  href={education.location}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white underline hover:text-orange-500 transition duration-300 text-xs"
-                >
-                  {education.name}
-                </a>
+                <div className="flex items-center gap-2 mt-4">
+                  <FaMapMarkerAlt size={20} />
+                  <a
+                    href={education.location}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white underline hover:text-orange-500 transition duration-300 text-xs"
+                  >
+                    {education.name}
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-    </section>
+          ))}
+        </Slider>
+      </section> */}
+    </>
   );
 };
 

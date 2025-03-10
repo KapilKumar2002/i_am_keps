@@ -22,25 +22,25 @@ const ProjectCard = ({
         <img
           src={image}
           alt={name}
-          className="w-full max-h-40 h-full object-cover rounded-t-lg"
+          className="w-full max-h-36 h-full object-cover rounded-t-lg"
         />
         <div className="p-4 flex-grow">
-          <div className="flex justify-between items-center max-md:mb-2">
+          <div className="flex justify-between items-center">
             <h3 className="font-bold text-white">{name}</h3>
-            <div className="flex gap-4  md:hidden">
+            {/* <div className="flex gap-4  md:hidden">
               <div className="p-2 rounded-md ring-2 ring-gray-400/10 hover:bg-orange-500 hover:text-black hover:scale-105 duration-700 shadow-lg">
                 <FaGithub />
               </div>
               <div className="p-2 rounded-md ring-2 ring-gray-400/10 hover:bg-orange-500 hover:text-black hover:scale-105 duration-700 shadow-lg">
                 <FaExternalLinkAlt />
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="flex justify-between mb-2 text-xs text-gray-400">
+          <div className="flex justify-between text-xs text-gray-400">
             <span>{projectType}</span>
             <span>{timePeriod}</span>
           </div>
-          <p className="text-gray-300 mb-2 line-clamp-3 md:text-sm text-xs">
+          <p className="text-gray-300 mb-2 line-clamp-2 md:text-sm text-xs">
             {description}
           </p>
           <div className="flex flex-wrap gap-2">
@@ -58,7 +58,7 @@ const ProjectCard = ({
           <div className="flex bg-gray-800 rounded-lg ring-2 ring-orange-500 h-full w-full justify-center items-center gap-4">
             <div
               onClick={openModal}
-              className="px-3 py-2 ring-2 shadow-[rgba(0,0,0,1)_5px_5px_0px_1px] hover:ring-orange-500 hover:shadow-orange-500  ring-gray-400/10 rounded-lg"
+              className="px-3 py-2 ring-2 max-sm:text-xs shadow-[rgba(0,0,0,1)_5px_5px_0px_1px] hover:ring-orange-500 hover:shadow-orange-500  ring-gray-400/10 rounded-lg"
             >
               Know More
             </div>

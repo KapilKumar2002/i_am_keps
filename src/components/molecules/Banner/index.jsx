@@ -9,36 +9,40 @@ const Banner = () => {
     <div id="about" className="pt-20">
       <div className="flex flex-col-reverse gap-10 max-w-7xl  mx-auto md:flex-row items-center justify-center md:p-8 p-3 md:h-[60vh]">
         {/* Left Section */}
-        <div className="text-white  flex flex-col justify-center md:items-start w-full">
-          <h2 className="text-2xl font-bold mb-4">Hi, I'm</h2>
-          <div className="text-2xl font-semibold mb-4 flex gap-2">
-            A{" "}
-            <Typewriter
-              options={{
-                strings: [
-                  "Software Developer",
-                  "Web Developer",
-                  "Mobile Developer",
-                  "Python Developer",
-                ],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 50,
-              }}
-            />
+        <div className="text-white flex flex-col justify-center md:items-start w-full">
+          <h2 className="md:text-2xl text-sm font-bold md:mb-3 mb-1">
+            Hi, I'm
+          </h2>
+          <div className="md:text-2xl text-orange-500 text-lg font-semibold mb-4 flex gap-1">
+            A
+            <p className="underline underline-offset-8 decoration-orange-500">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Software Developer",
+                    "Web Developer",
+                    "Mobile Developer",
+                    "Python Developer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 50,
+                }}
+              />
+            </p>
           </div>
-          <p className="text-lg mb-4 ">
+          <p className="md:text-lg mb-4 text-sm">
             I am a passionate Software Developer specializing in Full-Stack
             Development and Backend Engineering. I have experience in building
             high-performance web and mobile applications using modern
             technologies and best practices.
           </p>
           <div className="flex gap-6">
-            <div className="bg-orange-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <div className="bg-orange-700 max-md:text-xs flex items-center justify-center text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
               HIRE ME
             </div>
-            <div className="flex gap-3 items-center bg-orange-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
-              <FaDownload />
+            <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+              <FaDownload className="max-md:text-xs" />
               <h2>MY RESUME</h2>
             </div>
           </div>

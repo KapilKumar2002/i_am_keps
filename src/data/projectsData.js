@@ -61,6 +61,7 @@ const projectsData = [
   },
   {
     image: project,
+    name: "Katio: A Multiplayer Python Game",
     description:
       "Katio is a captivating multiplayer game developed using Python’s Kivy/KivyMD framework, featuring an engaging 8-way coloring algorithm. Designed for two players, the game challenges them to execute strategic jumps, eliminating their opponents with well-planned moves.\n\nThis project combines logical thinking with interactive gameplay, ensuring an exciting and competitive experience for players. The implementation of smooth animations, intuitive controls, and visually appealing graphics enhances the user experience. Katio is a great example of leveraging Python for game development while incorporating strategic elements to keep players engaged.",
     techStack: ["Python", "Kivy", "KivyMD"],
