@@ -23,7 +23,7 @@ const ExperienceCard = ({
             <img
               src={image}
               alt=""
-              className="h-32 w-32  shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] group-hover:shadow-orange-500 object-cover rounded-lg  ring-2 ring-gray-400/10 group-hover:ring-orange-500"
+              className="h-32 w-32 max-sm:w-28 max-sm:h-28  shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] group-hover:shadow-orange-500 object-cover rounded-lg  ring-2 ring-gray-400/10 group-hover:ring-orange-500"
             />
             <div className="flex flex-col items-start">
               <h3 className="text-sm font-bold text-white text-center">
@@ -54,7 +54,7 @@ const ExperienceCard = ({
               </div>
               <div
                 onClick={openModal}
-                className="bg-orange-500 text-white font-bold py-2 px-4 rounded"
+                className="bg-orange-500 text-white font-bold md:py-2 md:px-4 rounded max-md:text-xs py-1 px-2"
               >
                 Learn More
               </div>
