@@ -9,6 +9,7 @@ import python from "./Python.svg";
 import sqlite from "./sqlite.svg";
 import flutter from "./flutter.svg";
 import firebase from "./firebase.svg";
+import django from "./django.svg";
 
 export {
   nodejs,
@@ -22,4 +23,5 @@ export {
   sqlite,
   flutter,
   firebase,
+  django,
 };
