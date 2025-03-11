@@ -25,7 +25,7 @@ const Navbar = () => {
         </div>
         <div
           className={`flex max-md:flex-col  max-md: md:space-x-4 max-md:bg-gray-800  max-md:absolute max-md:w-full left-0  duration-1000  ${
-            isOpen ? "p-4  top-16" : "-top-96"
+            isOpen ? "p-4  top-16 gap-2" : "-top-96"
           }`}
         >
           {navTabs.map((tab, index) => (
