@@ -1,7 +1,19 @@
+import { iiitu, project } from "../assets/images";
+
 const achievementData = [
   {
     id: 1,
-    image: "project",
+    image: iiitu,
+    name: "IIITUNA, HIMACHAL PRADESH",
+    role: "Bachelor Degree",
+    title: "B.Tech in Information Technology",
+    date: "2020 - 2024",
+    description:
+      "I have completed my B.Tech Degree in Information Technology from Indian Institute of Information Technology, Una Himachal Pradesh.",
+  },
+  {
+    id: 1,
+    image: project,
     name: "HackerRank",
     role: "Programming",
     title: "5-Star Rating in Python & C++",
@@ -12,7 +24,7 @@ const achievementData = [
   },
   {
     id: 2,
-    image: "project",
+    image: project,
     name: "LeetCode & GeeksforGeeks",
     role: "Programming Skills",
     title: "400+ Coding Problems Solved",
@@ -22,7 +34,7 @@ const achievementData = [
   },
   {
     id: 3,
-    image: "project",
+    image: project,
     name: "Udemy",
     role: "Certification",
     title: "Secure Coding Certification",
@@ -32,7 +44,7 @@ const achievementData = [
   },
   {
     id: 4,
-    image: "project",
+    image: project,
     name: "LeetCode",
     role: "Database Skills",
     title: "Top 50 SQL Challenges Completed",
@@ -42,7 +54,7 @@ const achievementData = [
   },
   {
     id: 5,
-    image: "project",
+    image: project,
     name: "Leadership & Mentorship",
     role: "Mentorship",
     title: "Mentored College Juniors",
@@ -52,7 +64,7 @@ const achievementData = [
   },
   {
     id: 6,
-    image: "project",
+    image: project,
     name: "Leadership & Mentorship",
     role: "Mentorship",
     title: "Guided an Employee",

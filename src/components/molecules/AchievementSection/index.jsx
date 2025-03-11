@@ -83,14 +83,14 @@ const AchievementSection = () => {
                 <div className="w-full xl:w-[35%] h-full bg-gradient-to-r from-gray-900 to-gray-800 md:p-8 p-4 rounded-lg shadow-shadowOne flex flex-col md:flex-row xl:flex-col gap-8 justify-center md:justify-start xl:justify-center">
                   <img
                     className="h-52 md:h-32 xl:h-72 rounded-lg object-cover"
-                    src={project}
+                    src={achievement.image}
                     alt={achievement.title}
                   />
                   <div className="w-full flex flex-col justify-end">
                     {/* <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                       Bound - Trolola
                     </p> */}
-                    <h3 className="md:text-2xl text-lg font-bold">
+                    <h3 className="md:text-xl text-lg font-bold">
                       {achievement.name}
                     </h3>
                     <p className="md:text-base text-sm tracking-wide text-gray-500">

@@ -1,8 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBuilding, FaDownload } from "react-icons/fa";
 import { profile_image } from "../../../assets/images";
-import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const Banner = () => {
   return (
@@ -38,7 +37,7 @@ const Banner = () => {
             technologies and best practices.
           </p>
           <div className="flex md:gap-6 gap-3">
-            <div className="bg-orange-700 max-md:text-xs flex items-center justify-center text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <div className="bg-orange-700 md:hidden max-md:text-xs flex items-center justify-center text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
               HIRE ME
             </div>
             <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
