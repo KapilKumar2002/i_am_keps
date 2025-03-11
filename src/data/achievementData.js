@@ -1,4 +1,13 @@
-import { iiitu, project } from "../assets/images";
+import {
+  certificate,
+  coding,
+  database,
+  guidance,
+  hackerank,
+  iiitu,
+  mentor,
+  project,
+} from "../assets/images";
 
 const achievementData = [
   {
@@ -13,7 +22,7 @@ const achievementData = [
   },
   {
     id: 1,
-    image: project,
+    image: hackerank,
     name: "HackerRank",
     role: "Programming",
     title: "5-Star Rating in Python & C++",
@@ -24,7 +33,7 @@ const achievementData = [
   },
   {
     id: 2,
-    image: project,
+    image: coding,
     name: "LeetCode & GeeksforGeeks",
     role: "Programming Skills",
     title: "400+ Coding Problems Solved",
@@ -34,7 +43,7 @@ const achievementData = [
   },
   {
     id: 3,
-    image: project,
+    image: certificate,
     name: "Udemy",
     role: "Certification",
     title: "Secure Coding Certification",
@@ -44,7 +53,7 @@ const achievementData = [
   },
   {
     id: 4,
-    image: project,
+    image: database,
     name: "LeetCode",
     role: "Database Skills",
     title: "Top 50 SQL Challenges Completed",
@@ -54,7 +63,7 @@ const achievementData = [
   },
   {
     id: 5,
-    image: project,
+    image: guidance,
     name: "Leadership & Mentorship",
     role: "Mentorship",
     title: "Mentored College Juniors",
@@ -64,7 +73,7 @@ const achievementData = [
   },
   {
     id: 6,
-    image: project,
+    image: mentor,
     name: "Leadership & Mentorship",
     role: "Mentorship",
     title: "Guided an Employee",

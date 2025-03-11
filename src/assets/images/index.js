@@ -12,7 +12,12 @@ import netfrux_banner from "./nft_banner.png";
 import project from "./project.png";
 import iiitu from "./IIIT-Una.jpg";
 import quote from "./quote.png";
-
+import certificate from "./certificate.jpg";
+import database from "./database.jpg";
+import coding from "./coding.jpg";
+import hackerank from "./hackerank.png";
+import mentor from "./mentor.png";
+import guidance from "./guidance.jpg";
 export {
   profile_image,
   webxela_logo,
@@ -28,4 +33,10 @@ export {
   project,
   quote,
   iiitu,
+  certificate,
+  database,
+  coding,
+  hackerank,
+  mentor,
+  guidance,
 };

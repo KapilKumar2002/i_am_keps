@@ -8,7 +8,7 @@ const Banner = () => {
     <div id="about" className="pt-20">
       <div className="flex flex-col-reverse gap-10 max-w-7xl  mx-auto md:flex-row items-center justify-center md:p-8 p-3 md:h-[60vh]">
         {/* Left Section */}
-        <div className="text-white flex flex-col justify-center md:items-start w-full">
+        <div className=" flex flex-col justify-center md:items-start w-full">
           <h2 className="md:text-2xl text-sm font-bold md:mb-3 mb-1">
             Hi, I'm
           </h2>
@@ -37,10 +37,10 @@ const Banner = () => {
             technologies and best practices.
           </p>
           <div className="flex md:gap-6 gap-3">
-            <div className="bg-orange-700 md:hidden max-md:text-xs flex items-center justify-center text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <div className="bg-orange-700 md:hidden max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
               HIRE ME
             </div>
-            <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700 text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
               <FaDownload className="max-md:text-xs" />
               <h2>MY RESUME</h2>
             </div>
@@ -58,14 +58,14 @@ const Banner = () => {
                 </div>
                 <div className="flex flex-col items-center pt-4">
                   <div className="pt-4">
-                    <h3 className="text-xl font-bold mb-2 text-white text-center">
+                    <h3 className="text-xl font-bold mb-2  text-center">
                       Kapil Kumar
                     </h3>
                     {/* <p className="text-gray-300">MERN Stack Developer</p>
                   <p className="text-gray-300">Web Enthusiast</p>
                   <p className="text-gray-300">Tech Lover</p> */}
                   </div>
-                  <div className="bg-orange-700 max-md:text-xs flex items-center justify-center text-white font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+                  <div className="bg-orange-700 max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
                     HIRE ME
                   </div>
                 </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import contactInfo from "../../../data/contactInfo";
 import Title from "../../atoms/Title";
 
@@ -7,7 +6,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="p-8 max-md:px-3 mb-14 text-white flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
+      className="p-8 max-md:px-3 mb-14  flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
     >
       <div className="flex-1 flex flex-col gap-4 max-lg:max-w-2xl mx-auto">
         <Title title={"Contact"} />
@@ -35,7 +34,7 @@ const ContactSection = () => {
               Name
             </label>
             <input
-              className="w-full p-2 rounded bg-gray-700 text-white"
+              className="w-full p-2 rounded bg-gray-700 "
               type="text"
               id="name"
               name="name"
@@ -47,7 +46,7 @@ const ContactSection = () => {
               Email
             </label>
             <input
-              className="w-full p-2 rounded bg-gray-700 text-white"
+              className="w-full p-2 rounded bg-gray-700 "
               type="email"
               id="email"
               name="email"
@@ -59,7 +58,7 @@ const ContactSection = () => {
               Subject
             </label>
             <input
-              className="w-full p-2 rounded bg-gray-700 text-white"
+              className="w-full p-2 rounded bg-gray-700 "
               type="text"
               id="subject"
               name="subject"
@@ -71,7 +70,7 @@ const ContactSection = () => {
               Message
             </label>
             <textarea
-              className="w-full p-2 rounded bg-gray-700 text-white"
+              className="w-full p-2 rounded bg-gray-700 "
               id="message"
               name="message"
               rows="4"
@@ -79,7 +78,7 @@ const ContactSection = () => {
             ></textarea>
           </div>
           <button
-            className="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+            className="w-full bg-orange-500 hover:bg-orange-700  font-bold py-2 px-4 rounded transition duration-300"
             type="submit"
           >
             Send Message

@@ -26,7 +26,7 @@ const ProjectCard = ({
         />
         <div className="p-4 flex-grow">
           <div className="flex justify-between items-center">
-            <h3 className="font-bold text-white">{name}</h3>
+            <h3 className="font-bold ">{name}</h3>
             {/* <div className="flex gap-4  md:hidden">
               <div className="p-2 rounded-md ring-2 ring-gray-400/10 hover:bg-orange-500 hover:text-black hover:scale-105 duration-700 shadow-lg">
                 <FaGithub />

@@ -82,7 +82,7 @@ const AchievementSection = () => {
                 {/* Left Side */}
                 <div className="w-full xl:w-[35%] h-full bg-gradient-to-r from-gray-900 to-gray-800 md:p-8 p-4 rounded-lg shadow-shadowOne flex flex-col md:flex-row xl:flex-col gap-8 justify-center md:justify-start xl:justify-center">
                   <img
-                    className="h-52 md:h-32 xl:h-72 rounded-lg object-cover"
+                    className="h-52 md:h-32 xl:h-72 rounded-lg object-fill"
                     src={achievement.image}
                     alt={achievement.title}
                   />

@@ -4,7 +4,7 @@ import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white ">
+    <footer className="bg-gray-900  ">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Contact Information */}
@@ -20,23 +20,23 @@ const Footer = () => {
               href="https://www.linkedin.com/in/kapil-kumar-mathur/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:scale-105 hover:text-blue-500 transition-colors duration-300"
+              className=" hover:scale-105 hover:text-blue-500 transition-colors duration-300"
             >
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://github.com/KapilKumar2002"
+              href="https://www.leetcode.com/kapil012002"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:scale-105 hover:text-orange-500 transition-colors duration-300"
+              className=" hover:scale-105 hover:text-orange-500 transition-colors duration-300"
             >
               <SiLeetcode size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/kapil-kumar-mathur/"
+              href="https://www.geeksforgeeks.org/user/kapil012002/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:scale-105 hover:text-green-500 transition-colors duration-300"
+              className=" hover:scale-105 hover:text-green-500 transition-colors duration-300"
             >
               <SiGeeksforgeeks size={20} />
             </a>
@@ -44,25 +44,45 @@ const Footer = () => {
               href="https://github.com/KapilKumar2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:scale-105 hover:text-black transition-colors duration-300"
+              className=" hover:scale-105 hover:text-black transition-colors duration-300"
             >
               <FaGithub size={20} />
             </a>
           </div>
 
           <div className="flex gap-4 mt-4 max-md:hidden">
-            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-black">
+            <a
+              href="https://github.com/KapilKumar2002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-black"
+            >
               <FaGithub />
-            </div>
-            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-blue-700">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kapil-kumar-mathur/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-blue-700"
+            >
               <FaLinkedin />
-            </div>
-            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-green-700">
+            </a>
+            <a
+              href="https://www.geeksforgeeks.org/user/kapil012002/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-green-700"
+            >
               <SiGeeksforgeeks />
-            </div>
-            <div className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-orange-500">
+            </a>
+            <a
+              href="https://www.leetcode.com/kapil012002"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-orange-500"
+            >
               <SiLeetcode />
-            </div>
+            </a>
           </div>
 
           {/* Brief Description */}

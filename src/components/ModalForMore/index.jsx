@@ -19,8 +19,16 @@ const ModalForMore = (props) => {
     type,
     isProject,
     liveLink,
-    // githubLink,
+    githubLink,
   } = content;
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -32,7 +40,7 @@ const ModalForMore = (props) => {
             <FaChevronLeft className="md:w-6 md:h-6" />
           </button>
           <div className="flex flex-col items-center">
-            <h3 className="font-bold text-white text-center max-sm:text-sm">
+            <h3 className="font-bold  text-center max-sm:text-sm">
               {title ?? type}
             </h3>
             <h4 className="text-xs text-gray-300">{timePeriod}</h4>
@@ -50,7 +58,7 @@ const ModalForMore = (props) => {
           <div className="p-2">
             <div className="flex justify-between items-center md:mb-4 mb-2">
               <div className="flex flex-col items-start">
-                <h3 className="font-bold text-white text-center">{name}</h3>
+                <h3 className="font-bold  text-center">{name}</h3>
                 <p className="text-gray-400 text-center text-xs">{location}</p>
               </div>
               {!isProject ? (
@@ -58,13 +66,13 @@ const ModalForMore = (props) => {
                   <FaCircle color="orange" /> <span>{type}</span>
                 </p>
               ) : (
-                <div
-                  // to={githubLink}
-                  // target="_blank"
+                <a
+                  href={githubLink}
+                  target="_blank"
                   className="p-3 ring-2 rounded-md ring-orange-500 shadow-lg hover:bg-orange-500 hover:scale-110 duration-700 hover:text-black"
                 >
                   <FaGithub />
-                </div>
+                </a>
               )}
             </div>
             <ul className="list-disc list-inside sm:text-sm text-xs">

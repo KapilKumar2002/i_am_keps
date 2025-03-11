@@ -17,17 +17,11 @@ const ExperienceCard = ({
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.className = "overflow-hidden";
-    } else {
-      document.body.style.className = "overflow-auto";
-    }
-  }, [isModalOpen]);
+  // Correct dependency
 
   return (
     <>
-      <div className="md:mt-20 mt-10" data-aos="fade-up">
+      <div className="md:mt-20 mt-10">
         <div className="relative flex flex-col ring-2 shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] duration-700 ring-gray-400/10 hover:ring-orange-500 hover:shadow-orange-500 h-full  p-4 rounded-lg group">
           <div className="md:-mt-20 -mt-16 flex justify-between items-end">
             <img
@@ -36,9 +30,7 @@ const ExperienceCard = ({
               className="h-32 w-32 max-sm:w-28 max-sm:h-28  shadow-[rgba(0,0,0,1)_7px_7px_0px_1px] group-hover:shadow-orange-500 object-cover rounded-lg  ring-2 ring-gray-400/10 group-hover:ring-orange-500"
             />
             <div className="flex flex-col items-start">
-              <h3 className="text-sm font-bold text-white text-center">
-                {company}
-              </h3>
+              <h3 className="text-sm font-bold  text-center">{company}</h3>
               <p className="text-gray-400 text-center text-xs">{location}</p>
             </div>
           </div>
@@ -47,7 +39,7 @@ const ExperienceCard = ({
               <div className="flex flex-col items-start">
                 <div className="w-full mb-1">
                   <div className="flex justify-between w-full items-center">
-                    <h3 className="font-bold max-md:text-sm text text-white text-center">
+                    <h3 className="font-bold max-md:text-sm text  text-center">
                       Software Developer
                     </h3>
                     <h4 className="text-xs text-gray-500">{timePeriod}</h4>
@@ -67,7 +59,7 @@ const ExperienceCard = ({
               </div>
               <div
                 onClick={openModal}
-                className="bg-orange-500 text-white font-bold py-2 px-4 rounded max-md:text-sm"
+                className="bg-orange-500  font-bold py-2 px-4 rounded max-md:text-sm"
               >
                 Learn More
               </div>
