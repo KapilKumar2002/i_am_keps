@@ -43,13 +43,11 @@ const AchievementSection = () => {
     prevArrow: <SamplePrevArrow />,
     beforeChange: (prev, next) => setDotActive(next),
     appendDots: (dots) => (
-      <div style={{ borderRadius: "10px", padding: "10px" }}>
+      <div style={{ borderRadius: "10px" }}>
         <ul
           style={{
             display: "flex",
-            gap: "15px",
             justifyContent: "center",
-            marginTop: "20px",
           }}
         >
           {dots}
@@ -59,8 +57,8 @@ const AchievementSection = () => {
     customPaging: (i) => (
       <div
         style={{
-          width: "12px",
-          height: "12px",
+          width: "10px",
+          height: "10px",
           background: i === dotActive ? "orange" : "gray",
           borderRadius: "50%",
           cursor: "pointer",
