@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="p-8 max-md:px-3 mb-14  flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
+      className="p-8 max-md:px-3 mb-14 pt-20 flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
     >
       <div className="flex-1 flex flex-col max-md:items-center gap-4 max-lg:max-w-2xl mx-auto">
         <Title title={"Contact"} />
