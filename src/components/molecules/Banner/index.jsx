@@ -37,9 +37,12 @@ const Banner = () => {
             technologies and best practices.
           </p>
           <div className="flex md:gap-6 gap-3">
-            <div className="bg-orange-700 md:hidden max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <a
+              href="#contact"
+              className="bg-orange-700 md:hidden max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105"
+            >
               HIRE ME
-            </div>
+            </a>
             <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
               <FaDownload className="max-md:text-xs" />
               <h2>MY RESUME</h2>
@@ -65,9 +68,12 @@ const Banner = () => {
                   <p className="text-gray-300">Web Enthusiast</p>
                   <p className="text-gray-300">Tech Lover</p> */}
                   </div>
-                  <div className="bg-orange-700 max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+                  <a
+                    href="#contact"
+                    className="bg-orange-700 max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105"
+                  >
                     HIRE ME
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
