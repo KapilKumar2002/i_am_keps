@@ -8,13 +8,13 @@ const ContactSection = () => {
       id="contact"
       className="p-8 max-md:px-3 mb-14 pt-20 flex max-lg:flex-col max-w-5xl mx-auto gap-8 duration-500"
     >
-      <div className="flex-1 flex flex-col max-md:items-center gap-4 max-lg:max-w-2xl mx-auto">
+      <div className="flex-1 flex flex-col max-md:items-center gap-4 max-lg:w-full mx-auto">
         <Title title={"Contact"} />
         <div
           className="flex flex-col w-full gap-4 max-lg:mt-8"
           data-aos="fade-left"
         >
-          <div className="flex flex-wrap max-md:flex-col   gap-4">
+          <div className="flex flex-wrap max-md:flex-col max-lg:max-w-xl mx-auto  gap-4">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
