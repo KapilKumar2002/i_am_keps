@@ -12,23 +12,21 @@ const Banner = () => {
           <h2 className="md:text-2xl text-sm font-bold md:mb-3 mb-1">
             Hi, I'm
           </h2>
-          <div className="md:text-2xl text-orange-500 text-lg font-semibold mb-4 flex gap-1">
+          <div className="md:text-2xl underline underline-offset-8 decoration-orange-500 text-orange-500 text-lg font-semibold mb-4 flex gap-1">
             A
-            <p className="underline underline-offset-8 decoration-orange-500">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Software Developer",
-                    "Web Developer",
-                    "Mobile Developer",
-                    "Python Developer",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 50,
-                }}
-              />
-            </p>
+            <Typewriter
+              options={{
+                strings: [
+                  "Software Developer",
+                  "Web Developer",
+                  "Mobile Developer",
+                  "Python Developer",
+                ],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+              }}
+            />
           </div>
           <p className="md:text-lg mb-4 text-sm">
             I am a passionate Software Developer specializing in Full-Stack
@@ -43,10 +41,14 @@ const Banner = () => {
             >
               HIRE ME
             </a>
-            <div className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105">
+            <a
+              href=""
+              target="_blank"
+              className="flex gap-2 max-md:text-xs items-center justify-center bg-orange-700  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105"
+            >
               <FaDownload className="max-md:text-xs" />
               <h2>MY RESUME</h2>
-            </div>
+            </a>
           </div>
         </div>
 

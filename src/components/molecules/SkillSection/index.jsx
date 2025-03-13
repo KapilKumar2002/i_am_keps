@@ -11,7 +11,7 @@ const SkillSection = () => {
     arrows: false,
     dots: false,
     autoplay: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
 
   return (

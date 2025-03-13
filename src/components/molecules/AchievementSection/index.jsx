@@ -40,31 +40,20 @@ const AchievementSection = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     beforeChange: (prev, next) => setDotActive(next),
     appendDots: (dots) => (
-      <div style={{ borderRadius: "10px" }}>
-        <ul
-          style={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          {dots}
-        </ul>
+      <div>
+        <ul className="flex duration-700 justify-center">{dots}</ul>
       </div>
     ),
     customPaging: (i) => (
       <div
-        style={{
-          width: "10px",
-          height: "10px",
-          background: i === dotActive ? "orange" : "gray",
-          borderRadius: "50%",
-          cursor: "pointer",
-        }}
+        className={`h-3 w-3 duration-700 rounded-lg cursor-pointer ${
+          i == dotActive ? "bg-orange-500" : "bg-gray-500 "
+        } mt-10`}
       ></div>
     ),
   };
