@@ -16,6 +16,8 @@ import django from "./django.svg";
 import dart from "./dart.svg";
 import js from "./js.svg";
 import react from "./react.svg";
+import android from "./android.svg";
+import ios from "./ios.svg";
 
 export {
   nodejs,
@@ -36,4 +38,6 @@ export {
   cpp,
   tailwind,
   css,
+  android,
+  ios,
 };

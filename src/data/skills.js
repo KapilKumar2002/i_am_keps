@@ -1,4 +1,5 @@
 import {
+  android,
   bootstrap,
   cpp,
   css,
@@ -8,6 +9,7 @@ import {
   firebase,
   flutter,
   html,
+  ios,
   js,
   mongodb,
   mysql,
@@ -51,6 +53,8 @@ const skillsData = [
       { name: "Dart", image: dart },
       { name: "Firebase", image: firebase },
       { name: "SQLite", image: sqlite },
+      { name: "Android Studio", image: android },
+      { name: "iOS", image: ios },
     ],
   },
 ];
