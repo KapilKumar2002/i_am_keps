@@ -70,7 +70,7 @@ const ModalForMore = (props) => {
                 <a
                   href={githubLink}
                   target="_blank"
-                  className="p-3 ring-2 rounded-md ring-orange-500 shadow-lg hover:bg-orange-500 hover:scale-110 duration-700 hover:text-black"
+                  className="p-1 text-xs ring-2 rounded-sm ring-orange-500 shadow-lg hover:bg-orange-500 hover:scale-110 duration-700 hover:text-black"
                 >
                   <FaGithub />
                 </a>
