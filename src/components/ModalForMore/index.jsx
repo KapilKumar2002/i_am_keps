@@ -20,6 +20,7 @@ const ModalForMore = (props) => {
     isProject,
     liveLink,
     githubLink,
+    techStack,
   } = content;
 
   useEffect(() => {
@@ -55,7 +56,7 @@ const ModalForMore = (props) => {
             alt=""
             className="md:h-56 sm:h-48 h-40 w-full object-cover"
           />
-          <div className="p-2">
+          <div className="sm:p-4 p-2">
             <div className="flex justify-between items-center md:mb-4 mb-2">
               <div className="flex flex-col items-start">
                 <h3 className="font-bold  text-center">{name}</h3>
@@ -82,6 +83,20 @@ const ModalForMore = (props) => {
                 </li>
               ))}
             </ul>
+            <h1 className="font-bold mb-2">
+              {isProject ? "Tech Stacks" : "Skills"}
+            </h1>
+
+            <div className="flex flex-wrap gap-2">
+              {techStack.map((tech, index) => (
+                <div
+                  key={index}
+                  className="ring-1 rounded-full text-xs px-2 py-1 ring-gray-400"
+                >
+                  {tech}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

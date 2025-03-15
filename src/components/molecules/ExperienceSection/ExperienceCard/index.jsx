@@ -11,6 +11,7 @@ const ExperienceCard = ({
   timePeriod,
   banner,
   liveLink,
+  techStack,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -59,7 +60,7 @@ const ExperienceCard = ({
               </div>
               <div
                 onClick={openModal}
-                className="bg-orange-500  font-bold py-2 px-4 rounded max-md:text-sm"
+                className="bg-orange-500  font-bold py-2 px-4 rounded max-md:text-sm cursor-pointer"
               >
                 Learn More
               </div>
@@ -72,12 +73,13 @@ const ExperienceCard = ({
           content={{
             name: company,
             title: "Software Developer",
-            description: description,
+            description,
             type: jobType,
             image: banner,
-            timePeriod: timePeriod,
-            location: location,
-            liveLink: liveLink,
+            timePeriod,
+            location,
+            liveLink,
+            techStack,
           }}
         />
       </div>

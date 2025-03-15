@@ -16,13 +16,26 @@ const ContactSection = () => {
         >
           <div className="flex flex-wrap max-md:flex-col max-lg:max-w-xl mx-auto  gap-4">
             {contactInfo.map((info, index) => (
-              <div
+              <a
                 key={index}
+                href={
+                  info.type === "email"
+                    ? `mailto:${info.value}`
+                    : info.type === "phone"
+                    ? `tel:${info.value}`
+                    : info.type === "location"
+                    ? `https://www.google.com/maps/search/?q=${encodeURIComponent(
+                        info.value
+                      )}`
+                    : "#"
+                }
+                target={info.type === "location" ? "_blank" : "_self"} // Open maps in a new tab
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-orange-500 hover:bg-gradient-to-r from-orange-500 shadow-[rgba(0,0,0,1)_4px_4px_0px_1px] hover:scale-105 duration-700 hover:shadow-none to-orange-300 px-4 py-2 rounded-lg"
               >
                 <info.icon size={22} />
                 <span className="text-sm">{info.value}</span>
-              </div>
+              </a>
             ))}
           </div>
         </div>

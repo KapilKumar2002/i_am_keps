@@ -55,10 +55,10 @@ const ProjectCard = ({
           </div>
         </div>
         <div className="absolute -top-full group-hover:top-0 w-full duration-700 h-full bg-orange-500 bg-opacity-40 p-4">
-          <div className="flex bg-gray-800 rounded-lg ring-2 ring-orange-500 h-full w-full justify-center items-center gap-4">
+          <div className="flex cursor-pointer bg-gray-800 rounded-lg ring-2 ring-orange-500 h-full w-full justify-center items-center gap-4">
             <div
               onClick={openModal}
-              className="px-3 py-2 ring-2 max-sm:text-xs shadow-[rgba(0,0,0,1)_5px_5px_0px_1px] hover:ring-orange-500 hover:shadow-orange-500  ring-gray-400/10 rounded-lg"
+              className="px-3 py-2 duration-700 ring-2 max-sm:text-xs shadow-[rgba(0,0,0,1)_5px_5px_0px_1px] hover:ring-orange-500 hover:shadow-orange-500  ring-gray-400/10 rounded-lg"
             >
               Know More
             </div>
@@ -78,6 +78,7 @@ const ProjectCard = ({
           isProject: true,
           liveLink: liveLink,
           githubLink: githubLink,
+          techStack,
         }}
       />
     </div>
