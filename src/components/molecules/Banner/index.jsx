@@ -38,7 +38,7 @@ const Banner = () => {
 
           <div className="flex md:gap-6 gap-3">
             <a
-              href="#contact"
+              href={`mailto:kapil.work.2002@gmail.com`}
               className="bg-orange-700 max-md:text-xs flex items-center justify-center  font-bold py-2 px-4 rounded-md transition duration-300 ease-in-out transform shadow-[rgba(0,0,0,1)_8px_8px_0px_1px] hover:shadow-none hover:translate-y-1 hover:scale-105"
             >
               HIRE ME
