@@ -67,11 +67,11 @@ const AchievementSection = () => {
         <Slider {...settings}>
           {achievementData.map((achievement) => (
             <div key={achievement.id} className="w-full">
-              <div className="w-full h-auto flex flex-col xl:flex-row justify-between">
+              <div className="w-full h-auto group flex flex-col xl:flex-row justify-between">
                 {/* Left Side */}
                 <div className="w-full xl:w-[35%] h-full bg-gradient-to-r from-gray-900 to-gray-800 md:p-8 p-4 rounded-lg shadow-shadowOne flex flex-col md:flex-row xl:flex-col gap-8 justify-center md:justify-start xl:justify-center">
                   <img
-                    className="h-52 md:h-32 xl:h-72 rounded-lg object-fill"
+                    className="h-52 md:h-32 xl:h-72 rounded-lg duration-700 group-hover:scale-105 object-fill"
                     src={achievement.image}
                     alt={achievement.title}
                   />
