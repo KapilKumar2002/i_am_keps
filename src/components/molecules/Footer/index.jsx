@@ -55,7 +55,7 @@ const Footer = () => {
               href="https://github.com/KapilKumar2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-black"
+              className="social-icon hover:scale-110 hover:-translate-y-1 "
             >
               <FaGithub />
             </a>

@@ -53,7 +53,7 @@ const skillsData = [
       { name: "Dart", image: dart },
       { name: "Firebase", image: firebase },
       { name: "SQLite", image: sqlite },
-      { name: "Android Studio", image: android },
+      { name: "Android", image: android },
       { name: "iOS", image: ios },
     ],
   },
