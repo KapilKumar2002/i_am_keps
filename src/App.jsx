@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 import AchievementSection from "./components/molecules/AchievementSection";
 import { useState } from "react";
 import Loader from "./components/atoms/Loader";
-
 const App = () => {
   const [isLoad, setLoad] = useState(true);
   setTimeout(() => {

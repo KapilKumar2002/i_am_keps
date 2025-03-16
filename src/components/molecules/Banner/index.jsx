@@ -55,8 +55,8 @@ const Banner = () => {
         </div>
 
         {/* Right Section */}
-        <div className="h-full w-full">
-          <div className="sm:h-96 h-80 sm:w-72 w-64  relative group mx-auto">
+        <div className="h-full w-full flex justify-center items-center">
+          <div className="sm:h-96 h-80 sm:w-72 w-64   relative group mx-auto">
             <div className="h-full sm:w-72 w-full rounded-lg group-hover:ring-orange-500 ring-4 ring-gray-600/50 shadow-lg shadow-orange-500 rotate-6 group-hover:rotate-0 max-sm:rotate-0 duration-500 absolute"></div>
             <div className="h-full sm:w-72 w-full justify-between rounded-lg ring-4 group-hover:ring-orange-500 ring-gray-600/50 shadow-lg shadow-orange-500 -rotate-6 group-hover:rotate-0 max-sm:rotate-0 duration-500 absolute bg-gray-800 flex flex-col items-center p-4">
               <div>
