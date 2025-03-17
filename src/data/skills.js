@@ -6,6 +6,7 @@ import {
   dart,
   django,
   docker,
+  figma,
   firebase,
   flutter,
   html,
@@ -49,8 +50,9 @@ const skillsData = [
   {
     title: "mobile",
     skills: [
-      { name: "Flutter", image: flutter },
       { name: "Dart", image: dart },
+      { name: "Flutter", image: flutter },
+      { name: "Figma", image: figma },
       { name: "Firebase", image: firebase },
       { name: "SQLite", image: sqlite },
       { name: "Android", image: android },

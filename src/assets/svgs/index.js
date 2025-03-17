@@ -18,6 +18,7 @@ import js from "./js.svg";
 import react from "./react.svg";
 import android from "./android.svg";
 import ios from "./ios.svg";
+import figma from "./figma.svg";
 
 export {
   nodejs,
@@ -40,4 +41,5 @@ export {
   css,
   android,
   ios,
+  figma,
 };
