@@ -83,7 +83,7 @@ const ModalForMore = (props) => {
                 </li>
               ))}
             </ul>
-            <h1 className="font-bold mb-2">
+            <h1 className="font-bold mb-2 text-sm">
               {isProject ? "Tech Stacks" : "Skills"}
             </h1>
 
