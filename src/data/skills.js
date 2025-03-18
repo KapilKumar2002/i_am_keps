@@ -16,6 +16,7 @@ import {
   mysql,
   nodejs,
   postgresql,
+  postman,
   python,
   react,
   sqlite,
@@ -45,6 +46,7 @@ const skillsData = [
       { name: "Docker", image: docker },
       { name: "PostgreSQL", image: postgresql },
       { name: "MySQL", image: mysql },
+      { name: "Postman", image: postman },
     ],
   },
   {

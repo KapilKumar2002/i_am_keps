@@ -19,6 +19,7 @@ import react from "./react.svg";
 import android from "./android.svg";
 import ios from "./ios.svg";
 import figma from "./figma.svg";
+import postman from "./postman.svg";
 
 export {
   nodejs,
@@ -42,4 +43,5 @@ export {
   android,
   ios,
   figma,
+  postman,
 };
