@@ -11,6 +11,7 @@ const ExperienceCard = ({
   timePeriod,
   banner,
   liveLink,
+  role,
   techStack,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,7 +42,7 @@ const ExperienceCard = ({
                 <div className="w-full mb-1">
                   <div className="flex justify-between w-full items-center">
                     <h3 className="font-bold max-md:text-sm text  text-center">
-                      Software Developer
+                      {role}
                     </h3>
                     <h4 className="text-xs text-gray-500">{timePeriod}</h4>
                   </div>
@@ -72,7 +73,7 @@ const ExperienceCard = ({
           onClose={closeModal}
           content={{
             name: company,
-            title: "Software Developer",
+            title: role,
             description,
             type: jobType,
             image: banner,
