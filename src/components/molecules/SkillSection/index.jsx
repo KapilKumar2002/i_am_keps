@@ -1,48 +1,38 @@
 import React from "react";
 import Title from "../../atoms/Title";
-import Slider from "react-slick";
 import skillsData from "../../../data/skills";
 
 const SkillSection = () => {
-  const settings = {
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: false,
-    autoplay: true,
-    pauseOnHover: true,
-  };
-
   return (
     <div
       id="skills"
       className="flex flex-col items-center pt-20 max-md:px-3 gap-8"
     >
       <Title title="Skills" />
-      <div className="md:max-w-2xl w-full mx-auto md:px-8 px-3">
-        <Slider {...settings}>
-          {skillsData.map(({ skills, title }, index) => (
-            <div key={title} className="flex justify-center items-center">
-              <div className="flex flex-wrap justify-center md:gap-6 gap-2 ">
-                {skills.map((skill, index) => (
-                  <div className="flex flex-col items-center p-4 transform transition duration-500 hover:scale-105">
-                    <div className="rounded-full overflow-hidden hover:ring-orange-500 hover:shadow-lg bg-white ring-2 hover:shadow-orange-500 ring-black shadow-[rgba(0,0,0,1)_5px_5px_0px_1px]">
-                      <img
-                        src={skill.image}
-                        alt={skill.name}
-                        className=" md:w-24 md:h-24 w-12 h-12 sm:w-20 sm:h-20 p-2 sm:p-3 md:p-4  object-cover   duration-200"
-                      />
-                    </div>
-                    <p className="mt-2 md:text-sm text-xs font-medium">
-                      {skill.name}
-                    </p>
-                  </div>
-                ))}
-              </div>
+      <div className="w-[30rem] max-w-6xl flex shrink-0 flex-col gap-4 relative p-6 overflow-hidden">
+        {skillsData.map((row, index) => (
+          <div
+            className="loop-slider"
+            key={index}
+            style={{
+              ["--duration"]: `${10000 + index * 2000}ms`,
+              ["--direction"]: index % 2 === 0 ? "normal" : "reverse",
+            }}
+          >
+            <div className="flex w-fit animate-[loop_var(--duration)_linear_infinite_var(--direction)]">
+              {[...row, ...row].map((skill, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-1 text-slate-200 text-sm bg-slate-800 rounded-md px-2 py-3 mr-4 shadow-[0_0.1rem_0.2rem_rgba(0,0,0,0.2),0_0.1rem_0.5rem_rgba(0,0,0,0.3),0_0.2rem_1.5rem_rgba(0,0,0,0.4)]"
+                >
+                  <img src={skill.image} alt={skill.name} className="w-5 h-5" />
+                  <span className="text-slate-400 text-base">{skill.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </Slider>
+          </div>
+        ))}
+        <div className="fade pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,#1e293b,transparent_30%,transparent_70%,#1e293b)]" />
       </div>
     </div>
   );
