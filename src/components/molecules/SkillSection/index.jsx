@@ -15,15 +15,20 @@ const SkillSection = () => {
             className="loop-slider"
             key={index}
             style={{
-              ["--duration"]: `${10000 + index * 2000}ms`,
-              ["--direction"]: index % 2 === 0 ? "normal" : "reverse",
+              "--duration": `${10000 + index * 2000}ms`,
+              "--direction": index % 2 === 0 ? "normal" : "reverse",
             }}
           >
-            <div className="flex w-fit animate-[loop_var(--duration)_linear_infinite_var(--direction)]">
+            <div
+              className="flex w-fit gap-4"
+              style={{
+                animation: `loop var(--duration) linear infinite var(--direction)`,
+              }}
+            >
               {[...row, ...row].map((skill, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-1 text-slate-200 text-sm bg-slate-800 rounded-md px-2 py-3 mr-4 shadow-[0_0.1rem_0.2rem_rgba(0,0,0,0.2),0_0.1rem_0.5rem_rgba(0,0,0,0.3),0_0.2rem_1.5rem_rgba(0,0,0,0.4)]"
+                  className="flex gap-2 items-center justify-center px-7 py-3 text-slate-200 text-sm bg-slate-800 shadow-[0_0.1rem_0.2rem_rgba(0,0,0,0.2),0_0.1rem_0.5rem_rgba(0,0,0,0.3),0_0.2rem_1.5rem_rgba(0,0,0,0.4)] hover:shadow-orange-500"
                 >
                   <img src={skill.image} alt={skill.name} className="w-5 h-5" />
                   <span className="text-slate-400 text-base">{skill.name}</span>
