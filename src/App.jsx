@@ -15,10 +15,13 @@ const App = () => {
   setTimeout(() => {
     setLoad(false);
   }, 5000);
-  return isLoad ? (
-    <Loader />
-  ) : (
-    <>
+  return (
+    <div className="relative overflow-hidden">
+      {/* Loader Curtain */}
+
+      <Loader isLoad={isLoad} />
+
+      {/* Main App Content */}
       <Navbar />
       <Banner />
       <ExperienceSection />
@@ -27,7 +30,7 @@ const App = () => {
       <AchievementSection />
       <ContactSection />
       <Footer />
-    </>
+    </div>
   );
 };
 

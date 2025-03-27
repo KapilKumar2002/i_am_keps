@@ -39,11 +39,8 @@ const ContactSection = () => {
     >
       <div className="flex-1 flex flex-col max-md:items-center gap-4 max-lg:w-full mx-auto">
         <Title title={"Contact"} />
-        <div
-          className="flex flex-col w-full gap-4 max-lg:mt-8"
-          data-aos="fade-left"
-        >
-          <div className="flex flex-wrap max-md:flex-col max-lg:max-w-xl mx-auto gap-4">
+        <div className="flex flex-col w-full gap-4 max-lg:mt-8">
+          <div className="flex flex-wrap max-md:flex-col max-md:items-center max-lg:max-w-xl mx-auto gap-4">
             {contactInfo.map((info, index) => (
               <a
                 key={index}
@@ -60,10 +57,11 @@ const ContactSection = () => {
                 }
                 target={info.type === "location" ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-orange-500 hover:bg-gradient-to-r from-orange-500 shadow-[rgba(0,0,0,1)_4px_4px_0px_1px] hover:scale-105 duration-700 hover:shadow-none to-orange-300 px-4 py-2 rounded-lg"
+                className="flex relative group overflow-hidden items-center gap-2  scale-105 duration-700 hover:shadow-none to-orange-300 px-4 py-2 rounded-lg"
               >
                 <info.icon size={22} />
                 <span className="text-sm">{info.value}</span>
+                <div className="absolute h-1 w-full bg-orange-500 left-0 bottom-0 duration-700 -translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0"></div>
               </a>
             ))}
           </div>

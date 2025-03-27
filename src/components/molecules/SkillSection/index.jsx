@@ -9,7 +9,7 @@ const SkillSection = () => {
       className="flex flex-col items-center pt-20 max-md:px-3 gap-8"
     >
       <Title title="Skills" />
-      <div className="w-[30rem] max-w-6xl flex shrink-0 flex-col gap-4 relative p-6 overflow-hidden">
+      <div className="w-[30rem] max-sm:w-[20rem] max-[320px]:w-full  max-w-6xl flex shrink-0 flex-col gap-4 relative p-6 overflow-hidden">
         {skillsData.map((row, index) => (
           <div
             className="loop-slider"
@@ -20,7 +20,7 @@ const SkillSection = () => {
             }}
           >
             <div
-              className="flex w-fit gap-4"
+              className="flex w-fit sm:gap-4 gap-2"
               style={{
                 animation: `loop var(--duration) linear infinite var(--direction)`,
               }}
@@ -28,10 +28,16 @@ const SkillSection = () => {
               {[...row, ...row].map((skill, i) => (
                 <div
                   key={i}
-                  className="flex gap-2 items-center justify-center px-7 py-3 text-slate-200 text-sm bg-slate-800 shadow-[0_0.1rem_0.2rem_rgba(0,0,0,0.2),0_0.1rem_0.5rem_rgba(0,0,0,0.3),0_0.2rem_1.5rem_rgba(0,0,0,0.4)] hover:shadow-orange-500"
+                  className="flex sm:gap-2 gap-1 items-center justify-center sm:px-7 px-4 sm:py-3 py-2 text-slate-200 text-sm bg-slate-800 shadow-[0_0.1rem_0.2rem_rgba(0,0,0,0.2),0_0.1rem_0.5rem_rgba(0,0,0,0.3),0_0.2rem_1.5rem_rgba(0,0,0,0.4)] hover:shadow-orange-500"
                 >
-                  <img src={skill.image} alt={skill.name} className="w-5 h-5" />
-                  <span className="text-slate-400 text-base">{skill.name}</span>
+                  <img
+                    src={skill.image}
+                    alt={skill.name}
+                    className="sm:w-5 sm:h-5 w-4 h-4"
+                  />
+                  <span className="text-slate-400 text-base max-sm:text-xs">
+                    {skill.name}
+                  </span>
                 </div>
               ))}
             </div>

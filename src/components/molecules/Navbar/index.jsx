@@ -29,14 +29,17 @@ const Navbar = () => {
           }`}
         >
           {navTabs.map((tab, index) => (
-            <a
-              key={index}
-              href={tab.href}
-              className="hover:text-orange-500"
-              onClick={closeMenu}
-            >
-              {tab.label}
-            </a>
+            <div className="group overflow-hidden">
+              <a
+                key={index}
+                href={tab.href}
+                className="hover:text-orange-500 after:"
+                onClick={closeMenu}
+              >
+                {tab.label}
+              </a>
+              <div className="h-[2px] w-full bg-orange-500 -translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-transform duration-700"></div>
+            </div>
           ))}
         </div>
         <div className="md:hidden z-50 absolute right-4">

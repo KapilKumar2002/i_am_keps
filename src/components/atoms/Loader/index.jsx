@@ -1,9 +1,13 @@
 import React from "react";
 import { ThreeDots } from "react-loader-spinner";
 
-const Loader = () => {
+const Loader = ({ isLoad }) => {
   return (
-    <div className="flex justify-center items-center h-screen flex-col text-orange-500 px-8">
+    <div
+      className={`fixed inset-0 z-50 bg-gray-800 flex flex-col text-orange-500 items-center justify-center transition-transform duration-1000 ease-in-out ${
+        isLoad ? "translate-y-0" : "-translate-y-full pointer-events-none"
+      }`}
+    >
       <ThreeDots
         height="80"
         width="80"
