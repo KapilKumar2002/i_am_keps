@@ -55,7 +55,7 @@ const Footer = () => {
               href="https://github.com/KapilKumar2002"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon hover:scale-110 hover:-translate-y-1 "
+              className="social-icon hover:scale-110 hover:-translate-y-1 duration-700"
             >
               <FaGithub />
             </a>
@@ -63,7 +63,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/kapil-kumar-mathur/"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-blue-700"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-blue-700 duration-700"
             >
               <FaLinkedin />
             </a>
@@ -71,7 +71,7 @@ const Footer = () => {
               href="https://www.geeksforgeeks.org/user/kapil012002/"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-green-700"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-green-700 duration-700"
             >
               <SiGeeksforgeeks />
             </a>
@@ -79,7 +79,7 @@ const Footer = () => {
               href="https://www.leetcode.com/kapil012002"
               target="_blank"
               rel="noopener noreferrer"
-              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-orange-500"
+              className="social-icon hover:scale-110 hover:-translate-y-1 hover:text-orange-500 duration-700"
             >
               <SiLeetcode />
             </a>
