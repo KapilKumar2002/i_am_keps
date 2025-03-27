@@ -22,14 +22,18 @@ const App = () => {
       <Loader isLoad={isLoad} />
 
       {/* Main App Content */}
-      <Navbar />
-      <Banner />
-      <ExperienceSection />
-      <ProjectSection />
-      <SkillSection />
-      <AchievementSection />
-      <ContactSection />
-      <Footer />
+      {isLoad ? null : (
+        <>
+          <Navbar />
+          <Banner />
+          <ExperienceSection />
+          <ProjectSection />
+          <SkillSection />
+          <AchievementSection />
+          <ContactSection />
+          <Footer />
+        </>
+      )}
     </div>
   );
 };

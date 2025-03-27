@@ -48,7 +48,7 @@ textarea {
 
 .profile-card{
   
-  animation: profile-card-animation 1000ms ease-in-out forwards;
+  animation: profile-card-animation 700ms ease-in-out 300ms forwards;
 }
 
 @keyframes profile-card-animation{
@@ -65,8 +65,10 @@ textarea {
 
 
 @keyframes loop {
+  
   0% {
     transform: translateX(0);
+    
   }
 
   100% {
