@@ -4,7 +4,7 @@ import { ThreeDots } from "react-loader-spinner";
 const Loader = ({ isLoad }) => {
   return (
     <div
-      className={`fixed inset-0 z-50 bg-gray-800 flex flex-col text-orange-500 items-center justify-center transition-transform duration-1000 ease-in-out ${
+      className={`fixed inset-0 z-50 bg-gray-800 flex flex-col text-orange-500 items-center justify-center transition-transform duration-1000 ease-in-out px-8 ${
         isLoad ? "translate-y-0" : "-translate-y-full pointer-events-none"
       }`}
     >
