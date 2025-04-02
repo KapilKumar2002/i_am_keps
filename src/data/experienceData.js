@@ -35,7 +35,7 @@ const experienceData = [
     techStack: ["Flutter", "Dart", "BLoC", "Provider", "REST API"],
     githubLink: "https://github.com/your-github/webxela-project",
     liveLink: "https://webxela.com",
-    timePeriod: "March 2024 - Oct 2024",
+    timePeriod: "Jan 2024 - Oct 2024",
     location: "Bengaluru, Karnataka, India",
     role: "Flutter Developer",
     banner: webxela_banner,
